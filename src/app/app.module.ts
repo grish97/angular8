@@ -8,6 +8,8 @@ import { BlogComponent } from './components/pages/blog/blog.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { OurTeamComponent } from './components/pages/our-team/our-team.component';
+import { NotFoundComponent } from './components/pages/not-found/not-found.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,10 +18,12 @@ import { OurTeamComponent } from './components/pages/our-team/our-team.component
     BlogComponent,
     HeaderComponent,
     FooterComponent,
-    OurTeamComponent
+    OurTeamComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],

@@ -1,27 +1,23 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import {HomeComponent} from './components/pages/home/home.component';
 import {BlogComponent} from './components/pages/blog/blog.component';
-
-
-const renderComponent = (Component: any, isLayout?: boolean) => {
-  console.log(isLayout);
-  return Component;
-};
+import {NotFoundComponent} from './components/pages/not-found/not-found.component';
 
 
 const routes: Routes = [
   {
     path: ``,
-    component: renderComponent(HomeComponent, true)
+    component: HomeComponent
   },
   {
     path: `blog`,
     component: BlogComponent
   },
   {
-    path: `our-team`,
-    component: BlogComponent
+    path: `**`,
+    component: NotFoundComponent
   }
 ];
 
