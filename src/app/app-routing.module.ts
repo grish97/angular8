@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './components/pages/home/home.component';
 import {BlogComponent} from './components/pages/blog/blog.component';
 import {NotFoundComponent} from './components/pages/not-found/not-found.component';
+
+
 const routes: Routes = [
   {
     path: ``,
